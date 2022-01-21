@@ -19,7 +19,7 @@ public class InsertTable2
             String eaddr = sc.next();
             String sql_query = String.format("insert into employee values (%d,'%s',%f,'%s')", eno, ename, esal, eaddr);
             st.executeUpdate(sql_query);
-            System.out.println("Record Inserted Successfully");
+            System.out.println("Records Inserted Successfully");
             System.out.println("Want to insert more[yes/no] :");
             String choice=sc.next();
             if(choice.equalsIgnoreCase("no"))
