@@ -3,7 +3,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class UpdateTable
+public class UpdateTable1
 {
     public static void main(String[] args) throws SQLException
     {
@@ -11,7 +11,7 @@ public class UpdateTable
         String sql_query="update employee set esal=7777.5 where ename='Etisha'";
         Statement st=con.createStatement();
         int UpdatedCount=st.executeUpdate(sql_query);
-        System.out.println("Records Updated : "+ UpdatedCount);
+        System.out.println("Rows Updated : "+ UpdatedCount);
         con.close();
     }
 }
