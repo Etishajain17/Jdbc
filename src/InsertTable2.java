@@ -20,7 +20,7 @@ public class InsertTable2
             String sql_query = String.format("insert into employee values (%d,'%s',%f,'%s')", eno, ename, esal, eaddr);
             st.executeUpdate(sql_query);
             System.out.println("Records Inserted Successfully");
-            System.out.println("Want to insert more[yes/no] :");
+            System.out.println("Want to insert more[yes/no] :   ");
             String choice=sc.next();
             if(choice.equalsIgnoreCase("no"))
             {
