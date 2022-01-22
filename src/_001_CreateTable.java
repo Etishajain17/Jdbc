@@ -1,6 +1,6 @@
 import java.sql.*;
 
-public class CreateTable
+public class _001_CreateTable
 {
     public static void main(String[] args) throws ClassNotFoundException, SQLException
     {

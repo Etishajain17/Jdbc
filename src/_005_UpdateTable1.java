@@ -3,7 +3,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class UpdateTable1
+public class _005_UpdateTable1
 {
     public static void main(String[] args) throws SQLException
     {

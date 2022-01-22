@@ -1,6 +1,6 @@
 import java.sql.*;
 
-public class SelectTable1
+public class _008_SelectTable1
 {
     public static void main(String[] args) throws SQLException
     {

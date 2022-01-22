@@ -1,7 +1,7 @@
 import java.sql.*;
 import java.util.Scanner;
 
-public class SelectTable3
+public class _010_SelectTable3
 {
     public static void main(String[] args) throws SQLException
     {

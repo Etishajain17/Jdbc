@@ -4,7 +4,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Scanner;
 
-public class InsertTable2
+public class _004_InsertTable2
 {
     public static void main(String[] args) throws SQLException
     {
