@@ -10,10 +10,6 @@ public class _014_AggregateTable3
         Statement st=con.createStatement();
         System.out.println("Enter the number : ");
         int n=sc.nextInt();
-       //elect * from(
-        //select ename, sal, dense_rank()
-        //over(order by sal desc)r from Employee)
-        //where r=&n;
        // String sql_query=String.format("select * from ( select eno,ename,esal,eaddr,rank() over (order by esal desc)rank from employee) where rank=%s",n);
         String sql_query="select * from ( select eno,ename,esal,eaddr, rank() over(order by esal desc) as rank from employee) where rank="+n+"";
         ResultSet rs = st.executeQuery(sql_query);
