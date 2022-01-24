@@ -12,8 +12,8 @@ public class _027_BLOBTypeInsert
     {
         Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/people","root","");
         PreparedStatement ps=con.prepareStatement("insert into persons values(?,?)");
-        ps.setString(1,"Etisha");
-        File fi=new File("C:\\Users\\Etisha Jain\\Desktop\\pic.jpeg");
+        ps.setString(1,"Vishu");
+        File fi=new File("C:\\Users\\Etisha Jain\\Desktop\\pic23.jpeg");
         FileInputStream fis=new FileInputStream(fi);
         ps.setBinaryStream(2,fis);
         System.out.println("Inserting image from :"+fi.getAbsolutePath());
