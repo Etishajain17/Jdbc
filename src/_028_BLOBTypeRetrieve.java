@@ -12,7 +12,7 @@ public class _028_BLOBTypeRetrieve
         Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/people","root","");
         PreparedStatement ps=con.prepareStatement("select * from persons;");
         ResultSet rs=ps.executeQuery();
-        int n=2;
+        int n=1;
         while(rs.next())
         {
             FileOutputStream fos=new FileOutputStream("pic"+n+".jpg");
