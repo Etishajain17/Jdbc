@@ -12,21 +12,22 @@ public class _028_BLOBTypeRetrieve
         Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/people","root","");
         PreparedStatement ps=con.prepareStatement("select * from persons;");
         ResultSet rs=ps.executeQuery();
-        FileOutputStream fos=new FileOutputStream("pic1.jpg");
-        if(rs.next())
+        int n=2;
+        while(rs.next())
         {
+            FileOutputStream fos=new FileOutputStream("pic"+n+".jpg");
             String name=rs.getString(1);
+            System.out.println(name);
             InputStream is=rs.getBinaryStream(2);
-            byte[] buf=new byte[2048];
+            byte[] buf=new byte[is.available()];
             while(is.read(buf)>0)
             {
                 fos.write(buf);
             }
             fos.flush();
-            System.out.println("image is visible in pic1.jpg");
+            System.out.println("image is visible in pic"+n+".jpg");
+            n++;
         }
-        fos.close();
         con.close();
-
     }
 }
