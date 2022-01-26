@@ -14,6 +14,7 @@ public class _040_TransactionConcurrencyProblemsAndIsolationLevelCheck
 
     /*
     Common Isolation Levels
+    - TRANSACTION_NONE             -->0
     - TRANSACTION_READ_UNCOMMITTED -->1
     - TRANSACTION_READ_COMMITTED   -->2
     - TRANSACTION_REPEATABLE_READ  -->4
