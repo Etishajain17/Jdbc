@@ -1,6 +1,6 @@
 import java.sql.*;
 
-public class _043_ResultSetMetaData3
+public class _043_ResultSetMetaData1
 {
     /*
        ResultSetMetaData
