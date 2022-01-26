@@ -17,6 +17,7 @@ public class _042_MetaData2
             count++;
             System.out.println(rs.getString(3));
         }
+
         System.out.println("Number Of Tables :"+count);
         con.close();
     }
