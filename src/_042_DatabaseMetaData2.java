@@ -1,7 +1,10 @@
 import java.sql.*;
 
-public class _042_MetaData2
+public class _042_DatabaseMetaData2
 {
+    /*
+    DatabaseMetaData
+     */
     public static void main(String[] args) throws SQLException
     {
         int count=0;

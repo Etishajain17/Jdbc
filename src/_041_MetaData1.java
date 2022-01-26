@@ -6,7 +6,7 @@ import java.sql.SQLException;
 public class _041_MetaData1
 {
     /*
-    Data about data.
+    Data about data is called MetaData.
     JDBC has 3 types of MetaData-
     - DatabaseMetaData
     - ResultMetaData
