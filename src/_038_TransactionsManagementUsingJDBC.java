@@ -13,7 +13,8 @@ public class _038_TransactionsManagementUsingJDBC
     - con.commit()               ----> after completion of all operations explicitly we can commit
     - con.rollback()             ----> To rollback operations if any sql query fails
      */
-    public static void main(String[] args) throws SQLException {
+    public static void main(String[] args) throws SQLException
+    {
         MysqlConnectionPoolDataSource mcon=new MysqlConnectionPoolDataSource();
         mcon.setURL("jdbc:mysql://localhost:3306/jdbcpractical?user=root&password=");
         Connection con=mcon.getConnection();
