@@ -3,7 +3,7 @@ import java.sql.DatabaseMetaData;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class _041_MetaData1
+public class _041_DatabaseMetaData1
 {
     /*
     Data about data is called MetaData.
