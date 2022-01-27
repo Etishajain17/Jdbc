@@ -4,7 +4,7 @@ import java.sql.*;
 public class _049_ScrollSensitiveResultSet
 {
     /*
-    Only for Type-2 Driver
+    Only for Type-2 Drivers
      */
     public static void main(String[] args) throws SQLException, IOException
     {
