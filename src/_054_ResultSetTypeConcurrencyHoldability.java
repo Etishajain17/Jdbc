@@ -2,7 +2,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
 
-public class _054_ResultSetHoldability3
+public class _054_ResultSetTypeConcurrencyHoldability
 {
     public static void main(String[] args) throws Exception
     {
