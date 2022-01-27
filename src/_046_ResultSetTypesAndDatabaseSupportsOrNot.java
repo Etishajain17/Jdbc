@@ -17,7 +17,12 @@ public class _046_ResultSetTypesAndDatabaseSupportsOrNot
 
           Statement st=con.createStatement(int type,int mode);
           PreparedStatement pst=con.prepareStatement(Query,int type,int mode);
-     */
+
+    Division-3:Based on Holdability
+    - HOLD_CURSORS_OVER_COMMIT ---->1
+    - CLOSE_CURSORS_AT_COMMIT  ---->2
+
+    */
     public static void main(String[] args) throws Exception
     {
         Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbcpractical?user=root&password=");
