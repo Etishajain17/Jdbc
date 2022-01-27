@@ -15,13 +15,12 @@ public class _046_ResultSetTypesAndDatabaseSupportsOrNot
           - Scroll Insensitive ResultSet        ---->TYPE_SCROLL_INSENSITIVE ->1004
           - Scroll Sensitive ResultSet          ---->TYPE_SCROLL_SENSITIVE   ->1005
 
-          Statement st=con.createStatement(int type,int mode);
-          PreparedStatement pst=con.prepareStatement(Query,int type,int mode);
-
     Division-3:Based on Holdability
     - HOLD_CURSORS_OVER_COMMIT ---->1(by default)
     - CLOSE_CURSORS_AT_COMMIT  ---->2
 
+    Statement st=con.createStatement(int type,int mode,int holdability);
+    PreparedStatement pst=con.prepareStatement(Query,int type,int mode);
     */
     public static void main(String[] args) throws Exception
     {
