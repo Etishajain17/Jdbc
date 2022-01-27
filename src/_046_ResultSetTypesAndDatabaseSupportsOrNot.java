@@ -14,6 +14,9 @@ public class _046_ResultSetTypesAndDatabaseSupportsOrNot
     - Scrollable ResultSets
           - Scroll Insensitive ResultSet        ---->TYPE_SCROLL_INSENSITIVE ->1004
           - Scroll Sensitive ResultSet          ---->TYPE_SCROLL_SENSITIVE   ->1005
+
+          Statement st=con.createStatement(int type,int mode);
+          PreparedStatement pst=con.prepareStatement(Query,int type,int mode);
      */
     public static void main(String[] args) throws Exception
     {
