@@ -6,11 +6,11 @@ public class _046_ResultSetTypesAndDatabaseSupportsOrNot
 {
     /*
     Division-1:Based on operations performed(allowed values for mode/concurrency)
-    - Read Only ResultSets(Static ResultSets)   ---->CONCUR_READ_ONLY ->1007
+    - Read Only ResultSets(Static ResultSets)   ---->CONCUR_READ_ONLY ->1007(by default)
     - Updatable ResultSets(Dynamic ResultSets)  ---->CONCUR_UPDATABLE ->1008
 
     Division-2:Based on Cursor Movement(allowed values for type)
-    - Forward Only(Non-Scrollable) ResultSet    ---->TYPE_FORWARD_ONLY ->1003
+    - Forward Only(Non-Scrollable) ResultSet    ---->TYPE_FORWARD_ONLY ->1003(by default)
     - Scrollable ResultSets
           - Scroll Insensitive ResultSet        ---->TYPE_SCROLL_INSENSITIVE ->1004
           - Scroll Sensitive ResultSet          ---->TYPE_SCROLL_SENSITIVE   ->1005
@@ -19,7 +19,7 @@ public class _046_ResultSetTypesAndDatabaseSupportsOrNot
           PreparedStatement pst=con.prepareStatement(Query,int type,int mode);
 
     Division-3:Based on Holdability
-    - HOLD_CURSORS_OVER_COMMIT ---->1
+    - HOLD_CURSORS_OVER_COMMIT ---->1(by default)
     - CLOSE_CURSORS_AT_COMMIT  ---->2
 
     */
