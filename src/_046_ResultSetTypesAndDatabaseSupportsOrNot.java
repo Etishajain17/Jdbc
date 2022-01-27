@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 public class _046_ResultSetTypesAndDatabaseSupportsOrNot
 {
     /*
-    Division-1:Based on operations performed(allowed values for mode)
+    Division-1:Based on operations performed(allowed values for mode/concurrency)
     - Read Only ResultSets(Static ResultSets)   ---->CONCUR_READ_ONLY ->1007
     - Updatable ResultSets(Dynamic ResultSets)  ---->CONCUR_UPDATABLE ->1008
 
@@ -22,6 +22,8 @@ public class _046_ResultSetTypesAndDatabaseSupportsOrNot
     {
         Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbcpractical?user=root&password=");
         DatabaseMetaData dbmd=con.getMetaData();
+        // dbmd.supportsResultSetsConcurrency(int type,int concurrency);
+        // dbmd.supportsResultSetType(int type);
         System.out.println(dbmd.supportsResultSetConcurrency(1003,1007));
         System.out.println(dbmd.supportsResultSetConcurrency(1003,1008));
         System.out.println(dbmd.supportsResultSetType(1003));
